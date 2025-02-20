@@ -1,0 +1,19 @@
+apiVersion: elasticweb.com.bolingcavalry/v1
+kind: ElasticWeb
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"elasticweb.com.bolingcavalry/v1","kind":"ElasticWeb","metadata":{"annotations":{},"name":"elasticweb-sample","namespace":"dev"},"spec":{"image":"tomcat:8","port":30003,"singlePodQPS":50,"totalQPS":150}}
+  creationTimestamp: "2025-02-20T02:41:33Z"
+  generation: 7
+  name: elasticweb-sample
+  namespace: dev
+  resourceVersion: "10488989"
+  uid: 1ee69399-f23b-4b89-837c-3ac812f66f6c
+spec:
+  image: tomcat:8
+  port: 30003
+  singlePodQPS: 50
+  totalQPS: 200
+status:
+  realQPS: 200

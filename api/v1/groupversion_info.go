@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 // Package v1 contains API Schema definitions for the elasticweb v1 API group
-//+kubebuilder:object:generate=true
-//+groupName=elasticweb.com.bolingcavalry
+// +kubebuilder:object:generate=true
+// +groupName=elasticweb.com.bolingcavalry
 package v1
 
 import (
